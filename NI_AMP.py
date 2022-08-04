@@ -13,14 +13,10 @@ label=Label(root,font=('Ariel',10),text='Created by: A&S',bg='powder blue',fg="b
 ,borderwidth=5,relief='flat')
 label.pack()
 #adding an image of NI amp to the interface 
-photo = PhotoImage(file="E:\GUI_project\op-amp_1.png")
+photo = PhotoImage(file="D:\GUI_Project\op-amp_png.png")
 label=Label(image=photo)
 #placing the image to LHS of the interface
 label.place(x=50,y=100)
-f0 = Frame(root,borderwidth=3,bg="gray",relief="groove",width='100')
-f0.pack(fill="y",side="left")
-f1 = Frame(root,borderwidth=3,bg="gray",relief="groove",width='100')
-f1.pack(fill="y",side="right")
 #calculate gain function
 def cal_gain():
    t1=int(a.get())
